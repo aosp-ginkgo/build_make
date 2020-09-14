@@ -4937,7 +4937,7 @@ name := $(TARGET_PRODUCT)
 ifeq ($(TARGET_BUILD_TYPE),debug)
   name := $(name)_debug
 endif
-name := $(name)-$(PLATFORM_VERSION)-$(shell date +%Y%m%d-%H%M)-experimental
+name := $(name)-$(PLATFORM_VERSION)-$(shell date +%Y%m%d-%H%M)-beta
 
 INTERNAL_OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/$(name).zip
 INTERNAL_OTA_METADATA := $(PRODUCT_OUT)/ota_metadata
